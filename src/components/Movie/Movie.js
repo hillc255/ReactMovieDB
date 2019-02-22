@@ -18,17 +18,22 @@ class Movie extends Component {
     }
 
     componentDidMount(){
+        if (localStorage.getItem(`${this.props.match.params.movieId}`)){
+            const state = JSON.parse(localStorage.getItem(`${this.props.match.params.movieId}`));
+            this.setState({ ...state});
+        } else {
         this.setState({ loading: true })
         // First fetch the movie...
         const endpoint = `${API_URL}movie/${this.props.match.params.movieId}?api_key=${API_KEY}&language=en-US`;
         this.fetchItems(endpoint);
+        }
     }
 
     fetchItems = (endpoint) => {
         fetch(endpoint)
         .then(result => result.json())
         .then(result => {
-            console.log(result);
+           // console.log(result);
             if (result.status_code){
                 this.setState({ loading: false });
             } else {
@@ -44,6 +49,8 @@ class Movie extends Component {
                  actors: result.cast,
                  directors,
                  landing: false
+              }, () => {
+                  localStorage.setItem(`${this.props.match.params.movieId}`, JSON.stringify(this.state));
               })
              })
             })
@@ -58,7 +65,7 @@ class Movie extends Component {
                     <div>
                         <Navigation movie={this.props.location.movieName}/>
                         <MovieInfo movie={this.state.movie} directors={this.state.directors} />
-                        <MovieInfoBar time={this.state.runtime} budget={this.state.movie.budget} revenue={this.state.movie.revenue} /> 
+                        <MovieInfoBar time={this.state.movie.runtime} budget={this.state.movie.budget} revenue={this.state.movie.revenue} /> 
                     </div>
                 : null}
                 {this.state.actors ? 
@@ -73,10 +80,11 @@ class Movie extends Component {
                     {!this.state.actors && !this.state.loading ? <h1>No Movie Found!</h1> : null}
                     {this.state.loading ? <Spinner /> : null}
             
-                }
-            </div>
-        )
+                     </div>
+                )
+                           
+         }
     }
-}
+
 
 export default Movie;
