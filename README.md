@@ -7,7 +7,8 @@ Name:  ReactMovieDB
 * Simple movie web application with home page, search feature and movie detail page.  
 * App uses ReactJS which consumes the "The Movie Database (TMDB)" API. 
 
-Try it out! 
+Try it out!
+ 
 <https://hillc255.github.io/ReactMovieDB/>
 
 
