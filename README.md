@@ -21,7 +21,7 @@ Try it out!
 
 ## Code Description
 
-* ReactMovieDB developed using ReactJS, Node, HTML, and CSS using Visual Studio.
+* ReactMovieDB developed with ReactJS, Node, HTML, and CSS using Visual Studio.
 
 
 ## Motivation
