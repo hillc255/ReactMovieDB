@@ -6,7 +6,7 @@ import './MovieInfo.css';
 
 const MovieInfo = (props) => {
     return (
-      <div className="rmdb-movieInfo"
+      <div className="rmdb-movieinfo"
       style={{
         background: props.movie.backdrop_path ? `url('${IMAGE_BASE_URL}${BACKDROP_SIZE}${props.movie.backdrop_path}')` : '#000'
       }}
@@ -14,11 +14,11 @@ const MovieInfo = (props) => {
         <div className="rmdb-movieinfo-content">
         <div className="rmdb-movieinfo-thumb">
         <MovieThumb
-           image={props.movie.poster_path ? `${IMAGE_BASE_URL}${POSTER_SIZE}/${props.movie.poster_path}` : './images/no_image.jpg'}
+           image={props.movie.poster_path ? `${IMAGE_BASE_URL}${POSTER_SIZE}${props.movie.poster_path}` : './images/no_image.jpg'}
            clickable={false}
            />
         </div>
-        <div className="rmdb-movieInfo-text">
+        <div className="rmdb-movieinfo-text">
         <h1>{props.movie.title}</h1>
         <h3>PLOT</h3>
         <p>{props.movie.overview}</p>

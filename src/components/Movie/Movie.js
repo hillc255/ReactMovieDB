@@ -33,7 +33,7 @@ class Movie extends Component {
         fetch(endpoint)
         .then(result => result.json())
         .then(result => {
-           // console.log(result);
+         //  console.log
             if (result.status_code){
                 this.setState({ loading: false });
             } else {
@@ -48,7 +48,7 @@ class Movie extends Component {
               this.setState({
                  actors: result.cast,
                  directors,
-                 landing: false
+                 loading: false
               }, () => {
                   localStorage.setItem(`${this.props.match.params.movieId}`, JSON.stringify(this.state));
               })
@@ -79,8 +79,7 @@ class Movie extends Component {
                     : null }
                     {!this.state.actors && !this.state.loading ? <h1>No Movie Found!</h1> : null}
                     {this.state.loading ? <Spinner /> : null}
-            
-                     </div>
+                </div>
                 )
                            
          }

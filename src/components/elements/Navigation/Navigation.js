@@ -11,7 +11,7 @@ const Navigation = (props) => {
        <p>Home</p>
        </Link>
        <p>/</p>
-       <p>props.movie</p>
+       <p>{props.movie}</p>
      </div>
     </div>
     )
