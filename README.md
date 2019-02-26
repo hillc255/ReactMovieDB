@@ -19,11 +19,11 @@ Try it out!
 
 ## Code Description
 
-* ReactMovieDB developed using React, Node, HTML, and CSS using Visual Studio.
+* ReactMovieDB developed using ReactJS, Node, HTML, and CSS using Visual Studio.
 
 ## Motivation
 
-Application is a code-along project in Udemy's Beginner React (2019) - "Create a Movie Web App" course taught by Thomas Weibenfalk.
+Application is a code-along project in Udemy's Beginner React (2019) "Create a Movie Web App" course taught by Thomas Weibenfalk.
 
 
 ## Installation
