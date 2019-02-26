@@ -7,8 +7,10 @@ Name:  ReactMovieDB
 * Simple movie web application with home page, search feature and movie detail page.  
 * App uses ReactJS which consumes the "The Movie Database (TMDB)" API. 
 
+
 Try it out!   
 <https://hillc255.github.io/ReactMovieDB/>
+
 
 
 <p align="center">
@@ -20,6 +22,7 @@ Try it out!
 ## Code Description
 
 * ReactMovieDB developed using ReactJS, Node, HTML, and CSS using Visual Studio.
+
 
 ## Motivation
 
@@ -44,6 +47,7 @@ Application is a code-along project in Udemy's Beginner React (2019) "Create a M
 * Scollbar  to view more moview
 * Movie detail display including plot, rating, director, budget, actors
 * Minimal Design
+
 
 ## Tests
 
