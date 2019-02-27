@@ -14,7 +14,7 @@ Try it out!
 
 
 <p align="center">
- <kbd><img width="1000" height="400" src="readme_asset/moviereactdb.gif"></kbd>
+ <kbd><img width="900" height="400" src="readme_asset/moviereactdb.gif"></kbd>
 </p>
 
 
@@ -31,7 +31,7 @@ Application is a code-along project in Udemy's Beginner React (2019) "Create a M
 
 ## Installation
 
-1. Clone the repo: `git clone https://github.com/hillc255/ReactMovieDB.git
+1. Clone the repo: git clone https://github.com/hillc255/ReactMovieDB.git
 2. Navigate to the folder `cd ./ReactMovieDB`
 3. Install all the dependencies: `npm install`
 4. Start the server: `npm start`
