@@ -14,7 +14,7 @@ Try it out!
 
 
 <p align="center">
- <kbd><img width="1000" height="600" src="readme_asset/moviereactdb.gif"></kbd>
+ <kbd><img width="1000" height="400" src="readme_asset/moviereactdb.gif"></kbd>
 </p>
 
 
