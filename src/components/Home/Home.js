@@ -90,7 +90,7 @@ fetchItems = (endpoint) => {
                     </div> : null}
                     <div className="rmdb-home-grid">
                       <FourColGrid
-                      header={this.state.serachTerm ? 'Search Result' : 'Popular Movies'}
+                      header={this.state.searchTerm ? 'Search Result' : 'Popular Movies'}
                       loading={this.state.loading}
                       >
                       {this.state.movies.map ( (element, i) => {
