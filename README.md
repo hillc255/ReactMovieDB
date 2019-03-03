@@ -32,9 +32,19 @@ Application is a code-along project in Udemy's Beginner React (2019) "Create a M
 ## Installation
 
 1. Clone the repo: git clone https://github.com/hillc255/ReactMovieDB.git
-2. Navigate to the folder `cd ./ReactMovieDB`
-3. Install all the dependencies: `npm install`
-4. Start the server: `npm start`
+2. Obtain your own API key from "The Movie Database" website and add to config.js
+3. Navigate to the folder `cd ./ReactMovieDB`
+4. Install all the dependencies: `npm install`
+5. Start the server: `npm start`
+
+
+## Deployment
+
+1. Add your repo name in App.js:  <BrowserRouter basename="/[repo name]">
+2. Save repo link in package.json "homepage": "https//[your github account]/.github.io/[ repo name]" 
+3. Save github pages for viewing app:  npm install --save gh-pages
+4. Create a production build:  $npm run build
+5. Deploy application:  $ npm run deploy
 
 
 ## Features
