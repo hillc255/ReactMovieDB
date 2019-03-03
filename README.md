@@ -40,11 +40,11 @@ Application is a code-along project in Udemy's Beginner React (2019) "Create a M
 
 ## Deployment
 
-1. Add your repo name in App.js:  <BrowserRouter basename="/[repo name]">
+1. Add your repo name in App.js:  `<BrowserRouter basename="/[repo name]">`
 2. Save repo link in package.json "homepage": "https//[your github account]/.github.io/[ repo name]" 
-3. Save github pages for viewing app:  npm install --save gh-pages
-4. Create a production build:  $npm run build
-5. Deploy application:  $ npm run deploy
+3. Save github pages for viewing app:  `npm install --save gh-pages`
+4. Create a production build:  `$npm run build`
+5. Deploy application:  `$ npm run deploy`
 
 
 ## Features
