@@ -1,4 +1,4 @@
-#  ReactMovieDB Web Application
+#  ReactMovieDB Web Application - Amazing Project
 
 ## Synopsis
 
